@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://play-lh.googleusercontent.com/f_aMNED4-kxCcBV13XyEvYagUCiqMIA7PpCtYlCvc0kd3567pJ4NigLiM7RLN5vFx-A">
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="xoIcon.png">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="result-container">
+            <h1 id="result"></h1>
+        </div>
+        <div class="container">
+            <button id="0" class="box top-0 left-0" onclick="clickbox(this)"></button>
+            <button id="1" class="box top-0 " onclick="clickbox(this)"></button>
+            <button id="2" class="box top-0 right-0" onclick="clickbox(this)"></button>
+            <button id="3" class="box left-0" onclick="clickbox(this)"></button>
+            <button id="4" class="box" onclick="clickbox(this)"></button>
+            <button id="5" class="box right-0" onclick="clickbox(this)"></button>
+            <button id="6" class="box bottom-0 left-0" onclick="clickbox(this)"></button>
+            <button id="7" class="box bottom-0" onclick="clickbox(this)"></button>
+            <button id="8" class="box bottom-0 right-0" onclick="clickbox(this)"></button>
+        </div>
+        <div class="resetbtn-container">
+            <a href="" onclick="reset()">reset</a>
+            <h3 id="resetbtn">Turn: X</h3>
+        </div>
+    </div>
+</body>
+
+</html>
