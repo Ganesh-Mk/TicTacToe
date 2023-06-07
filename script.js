@@ -40,7 +40,14 @@ function checkWin(){
     if(a0.innerHTML == "O" && a1.innerHTML == "O" && a2.innerHTML == "O" || a3.innerHTML == "O" && a4.innerHTML == "O" && a5.innerHTML == "O" || a6.innerHTML == "O" && a7.innerHTML == "O" && a8.innerHTML == "O" || a0.innerHTML == "O" && a3.innerHTML == "O" && a6.innerHTML == "O" || a1.innerHTML == "O" && a4.innerHTML == "O" && a7.innerHTML == "O" || a2.innerHTML == "O" && a5.innerHTML == "O" && a8.innerHTML == "O" || a0.innerHTML == "O" && a4.innerHTML == "O" && a8.innerHTML == "O" || a2.innerHTML == "O" && a4.innerHTML == "O" && a6.innerHTML == "O"){
         printO();
     }
+    if((a0.innerHTML == "X" || a0.innerHTML == "O" ) && ( a1.innerHTML == "X" || a1.innerHTML == "O" ) && ( a2.innerHTML == "X" || a2.innerHTML == "O" ) && ( a3.innerHTML == "X" || a3.innerHTML == "O" ) && ( a4.innerHTML == "X" || a4.innerHTML == "O" ) && ( a5.innerHTML == "X" || a5.innerHTML == "O" ) && ( a6.innerHTML == "X" || a6.innerHTML == "O" ) && ( a7.innerHTML == "X" || a7.innerHTML == "O" ) && (a8.innerHTML == "O" || a8.innerHTML == "X" )){
+        printDraw();
+    }
   
+    function printDraw(){
+        document.getElementById('result').innerHTML = "Draw!";
+        win = true;
+    }
     function printX(){
         document.getElementById('result').innerHTML = "X &nbsp;is winner!";
         win = true;
